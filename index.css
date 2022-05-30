@@ -21,7 +21,7 @@ body{
 img{
 	display: inline-block;
 }
-.container{
+main{
 	margin: auto;
 	border-radius: .375rem;
 	background-color: hsl(216, 50%, 16%);
@@ -31,39 +31,33 @@ img{
 }
 .view{
 	position: relative;
-	border-radius: .375rem;
-}
-.view:hover{
-	filter:brightness(1.5);
-	cursor: pointer;
 }
 .view img{
 	display: block;
 	border-radius: .375rem;
-	width: -webkit-fill-available;
+	width: 100%;
 }
-.view div{
+.view:hover:after{
+	cursor: pointer;
 	background: url(./images/icon-view.svg) 50% no-repeat, rgba(100,100,200,0.75);
 	width: 100%;
 	height: 100%;
+	content: "";
 	position: absolute;
 	top: 0;
-	border-radius: 0.25rem;
-	opacity: 0;
+	border-radius: .375rem;
 	transition: .5s;
+	filter:brightness(1.5);
 }
-.view:hover div{
-	opacity: 1;
-}
-h2{
+h1{
 	color: hsl(0, 0%, 100%);
 	transition: .5s;
 }
-h2:hover{
+h1:hover{
 	color: hsl(178, 100%, 50%);
 	cursor: pointer;
 }
-.description{
+p{
 	color: hsl(215, 51%, 70%)
 }
 .between{
@@ -71,18 +65,17 @@ h2:hover{
 	justify-content: space-between;
 	align-items: center;
 }
-.between > div {
-	display: flex;
-	align-items: center;
-	gap: .5rem;
-}
 .ether{
+	padding-left: 1rem;
 	font-weight: bold;
 	color: hsl(178, 100%, 50%);
+	background: url(./images/icon-ethereum.svg) left center no-repeat;
 }
 .clock{
 	font-weight: 300;
+	padding-left: 1rem;
 	color: hsl(178, 100%, 50%);
+	background: url(./images/icon-clock.svg) left center no-repeat;
 }
 hr{
 	background-color: hsl(215, 32%, 27%);
@@ -91,21 +84,19 @@ hr{
 	margin: 1rem 0;
 }
 .liner{
-	padding-top: .5rem;
 	display: flex;
 	align-items: center;
-	font-size: .875rem;
 }
 .liner img{
 	width: 2rem;
 	border-radius: 100%;
-	box-shadow: 0 0 0 .0625rem #fff;
-	margin-right: 1rem;
+	box-shadow: 0 0 0 .075rem #fff;
+	margin-right: .5rem;
 }
 .liner a{
-	color: #fff;
 	text-decoration: none;
 	transition: .5s;
+	color: #fff;
 }
 .liner a:hover{
 	color: hsl(178, 100%, 50%);
