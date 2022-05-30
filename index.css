@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+html{
+	font-size: 18px;
+}
+body{
+	min-width: 375px;
+	margin: 0;
+	font-family: 'Outfit', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: hsl(217, 54%, 11%);
+	color: hsl(215, 51%, 70%);
+}
+*{
+	box-sizing: border-box;
+}
+img{
+	display: inline-block;
+}
+.container{
+	margin: auto;
+	border-radius: .375rem;
+	background-color: hsl(216, 50%, 16%);
+	padding: 2rem;
+	max-width: 375px;
+	box-shadow: 0 .75rem 3rem -.25rem #151515;
+}
+.view{
+	position: relative;
+	border-radius: .375rem;
+}
+.view:hover{
+	filter:brightness(1.5);
+	cursor: pointer;
+}
+.view img{
+	display: block;
+	border-radius: .375rem;
+	width: -webkit-fill-available;
+}
+.view div{
+	background: url(./images/icon-view.svg) 50% no-repeat, rgba(100,100,200,0.75);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	border-radius: 0.25rem;
+	opacity: 0;
+	transition: .5s;
+}
+.view:hover div{
+	opacity: 1;
+}
+h2{
+	color: hsl(0, 0%, 100%);
+	transition: .5s;
+}
+h2:hover{
+	color: hsl(178, 100%, 50%);
+	cursor: pointer;
+}
+.description{
+	color: hsl(215, 51%, 70%)
+}
+.between{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.between > div {
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+}
+.ether{
+	font-weight: bold;
+	color: hsl(178, 100%, 50%);
+}
+.clock{
+	font-weight: 300;
+	color: hsl(178, 100%, 50%);
+}
+hr{
+	background-color: hsl(215, 32%, 27%);
+	height: .125rem;
+	border: none;
+	margin: 1rem 0;
+}
+.liner{
+	padding-top: .5rem;
+	display: flex;
+	align-items: center;
+	font-size: .875rem;
+}
+.liner img{
+	width: 2rem;
+	border-radius: 100%;
+	box-shadow: 0 0 0 .0625rem #fff;
+	margin-right: 1rem;
+}
+.liner a{
+	color: #fff;
+	text-decoration: none;
+	transition: .5s;
+}
+.liner a:hover{
+	color: hsl(178, 100%, 50%);
+}
+@media screen and (min-width: 480) {
+	/* LOOK SAME FOR ME */
+}
