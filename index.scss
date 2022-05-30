@@ -50,6 +50,7 @@ main{
 	filter:brightness(1.5);
 }
 h1{
+	font-size: 1.2rem;
 	color: hsl(0, 0%, 100%);
 	transition: .5s;
 	:hover{
@@ -89,7 +90,7 @@ hr{
 	img{
 		width: 2rem;
 		border-radius: 100%;
-		box-shadow: 0 0 0 .075rem #fff;
+		box-shadow: 0 0 0.125rem .05rem #fff;
 		margin-right: .5rem;
 	}
 	a{

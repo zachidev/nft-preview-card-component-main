@@ -57,6 +57,7 @@ main {
 }
 
 h1 {
+  font-size: 1.2rem;
   color: white;
   transition: .5s;
 }
@@ -105,7 +106,7 @@ hr {
 .liner img {
   width: 2rem;
   border-radius: 100%;
-  box-shadow: 0 0 0 .075rem #fff;
+  box-shadow: 0 0 0.125rem .05rem #fff;
   margin-right: .5rem;
 }
 
